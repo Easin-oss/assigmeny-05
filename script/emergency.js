@@ -34,9 +34,28 @@ cheackover.forEach(service => {
                 <h1 class="text-3xl font-bold mb-3">${service.number}</h1>
                 <p class="bg-[#f2f2f2] w-[61px] h-[40px] text-center rounded-2xl px-4 py-2 mx-auto">${service.tag}</p>
             </div>
-            
+            </div>
+            <div class="flex justify-between items-center">
+                <button class="btn w-[140px] h-[40px]"><i class="fa-solid fa-copy"></i>Copy</button>
+                <button class="btn btn-success w-[140px] h-[40px]" onclick="callService('${service.name}','${service.number}')">
+                    <i class="fa-solid fa-phone"></i>Call
+                </button>
+            </div>
+
 
 
     `
 })
+ cardContainer.appendChild(card);
 
+function callService(serviceName,serviceNumber){
+     coins -= 20;
+        updateCoinDisplay();
+
+        alert(`Calling ${serviceName} at ${serviceNumber}`);
+
+        const historyList = document.getElementById('call-history');
+        const li = document.createElement('li');
+        li.textContent = `${serviceName} - ${serviceNumber}`;
+        historyList.appendChild(li);
+}
