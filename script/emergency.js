@@ -16,7 +16,7 @@ const cheackover = [
 ]
 
 const cardContainer = document.getElementById("card-container")
-cheackover.forEach(service => {
+services.forEach(service => {
     const card = document.createElement("div")
     card.className = "border-2 border-red-500 bg-white w-[430px] h-[360px] rounded-2xl p-8 shadow-lg";
 

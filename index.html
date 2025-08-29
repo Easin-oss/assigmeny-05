@@ -17,7 +17,8 @@
 
 <body>
     <!--nav bar-->
-    <div class="flex justify-between items-center w-[1920px] h-[120px]">
+    <div class="  flex justify-between items-center max-w-[1920px] mx-auto px-4 sm:px-6 h-[120px]">
+    
         <div class=" flex justify-center items-center gap-[20px]">
             <img src="./assets/logo.png" alt="" class="w-[50px] h-[50px]">
             <h1 class="text-[#013223] font-bold text-2xl">Emergency <br> service</h1>
@@ -40,8 +41,9 @@
         </div>
     </div>
     <!--card section-->
-    <div class="bg-[#f5fff6] flex justify-between ">
-        <div class="card-container grid grid-cols-3 gap-10 w-[1370px] min-auto mt-20 ">
+    <div class="bg-[#f5fff6]">
+        <div class="flex justify-between max-w-[1800px] mx-auto mb-20">
+        <div class="card-container  grid sm:grid-cols-1 sm:w-full md:grid-cols-3 gap-10 w-[1370px] min-auto mt-20 ">
 
             <div class=" bg-white w-[430px] h-[360px] rounded-2xl p-8 ">
                 <div class="flex justify-between items-center">
@@ -210,18 +212,18 @@
 
 
         <!-- call history section-->
-        <div class=" w-[400px] bg-[#ffffff] mt-20">
-            <div class=" flex justify-between items-center">
+        <div class=" w-[400px] bg-[#ffffff] p-4 mt-20">
+            <div class=" flex justify-between items-center mt-10">
                 <div>
                     <h2><i class="fa-solid fa-clock"></i> Call history</h2>
                 </div>
                 <div>
-                    <button class="btn btn-active btn-success w-[140px] h-[40px] rounded-3xl"
-                        onclick="clearhistory()">Clear</button>
+                    <button class="btn btn-success w-[140px] h-[40px] rounded-3xl" onclick="clearhistory()"> Clear</button>
+        
                 </div>
             </div>
             <div>
-                <ul id="Call-history" class="list-dis pl-5"></ul>
+                <ul id="Call-history" class="list-disc pl-5"></ul>
             </div>
             <div>
                 <h5></h5>
@@ -230,6 +232,7 @@
 
 
 
+    </div>
     </div>
 
     <script src="./script/emergency.js"></script>
