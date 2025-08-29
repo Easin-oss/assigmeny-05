@@ -25,7 +25,8 @@
         <div class="flex justify-center gap-5">
             <p class="w-[120px] h-[50px] bg-[#41ff6b1a] rounded-3xl text-center px-8 py-4"><span
                     id="heart-count">0</span>❤️</p>
-            <p class="w-[120px] h-[50px] bg-[#41ff6b1a] rounded-3xl text-center px-8 py-4"><span id="coin-count">100</span>🪙</p>
+            <p class="w-[120px] h-[50px] bg-[#41ff6b1a] rounded-3xl text-center px-8 py-4"><span
+                    id="coin-count">100</span>🪙</p>
             <p class="w-[120px] h-[50px] bg-[#00a63e] rounded-3xl text-center  px-8 py-4"> <span>0</span>Copy</p>
         </div>
     </div>
@@ -39,10 +40,10 @@
         </div>
     </div>
     <!--card section-->
-    <div class="bg-[#f5fff6]">
-        <div class="card-container">
+    <div class="bg-[#f5fff6] flex justify-between ">
+        <div class="card-container grid grid-cols-3 gap-10 w-[1370px] min-auto mt-20 ">
 
-            <div class="border-2 border-red-500 bg-white w-[430px] h-[360px] rounded-2xl p-8 ">
+            <div class=" bg-white w-[430px] h-[360px] rounded-2xl p-8 ">
                 <div class="flex justify-between items-center">
                     <img src="./assets/Bangladesh-Railway.png" alt=""
                         class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-md ">
@@ -70,7 +71,7 @@
 
 
             </div>
-            <div class="border-2 border-red-500 bg-white w-[430px] h-[360px] rounded-2xl p-8 ">
+            <div class=" bg-white w-[430px] h-[360px] rounded-2xl p-8 ">
                 <div class="flex justify-between items-center">
                     <img src="./assets/police.png" alt="" class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-md">
                     <button class="btn btn-circle" onclick="increaseHeart()">
@@ -97,7 +98,7 @@
 
 
             </div>
-            <div class="border-2 border-red-500 bg-white w-[430px] h-[360px] rounded-2xl p-8">
+            <div class=" bg-white w-[430px] h-[360px] rounded-2xl p-8">
                 <div class="flex justify-between items-center">
                     <img src="./assets/ambulance.png" alt="" class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-md">
                     <button class="btn btn-circle" onclick="increaseHeart()">
@@ -124,7 +125,7 @@
 
 
             </div>
-            <div class="border-2 border-red-500 bg-white w-[430px] h-[360px] rounded-2xl p-8 ">
+            <div class="bg-white w-[430px] h-[360px] rounded-2xl p-8 ">
                 <div class="flex justify-between items-center">
                     <img src="./assets/emergency.png" alt="" class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-md ">
                     <button class="btn btn-circle" onclick="increaseHeart()">
@@ -151,7 +152,7 @@
 
 
             </div>
-            <div class="border-2 border-red-500 bg-white w-[430px] h-[360px] rounded-2xl p-8 ">
+            <div class=" bg-white w-[430px] h-[360px] rounded-2xl p-8 ">
                 <div class="flex justify-between items-center">
                     <img src="./assets/police.png" alt="" class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-md">
                     <button class="btn btn-circle" onclick="increaseHeart()">
@@ -178,7 +179,7 @@
 
 
             </div>
-            <div class="border-2 border-red-500 bg-white w-[430px] h-[360px] rounded-2xl p-8">
+            <div class=" bg-white w-[430px] h-[360px] rounded-2xl p-8">
                 <div class="flex justify-between items-center">
                     <img src="./assets/ambulance.png" alt="" class="w-[60px] h-[60px] bg-[#ffe3e2] rounded-md">
                     <button class="btn btn-circle" onclick="increaseHeart()">
@@ -205,30 +206,27 @@
 
 
             </div>
-            <!-- call history section-->
-            <div class="border-2 border-red-500 w-[400px] bg-[#ffffff]">
-                <div class=" flex justify-between items-center">
-                    <div>
-                        <h2><i class="fa-solid fa-clock"></i> Call history</h2>
-                    </div>
-                    <div>
-                        <button class="btn btn-active btn-success w-[140px] h-[40px] rounded-3xl" onclick="clearhistory()"
-                        >Clear</button>
-                    </div>
-                </div>
-                <div>
-                    <ul id="Call-history" class="list-dis pl-5"></ul>
-                </div>
-                <div>
-                    <h5></h5>
-                </div>
-            </div>
         </div>
 
 
-
-
-
+        <!-- call history section-->
+        <div class=" w-[400px] bg-[#ffffff] mt-20">
+            <div class=" flex justify-between items-center">
+                <div>
+                    <h2><i class="fa-solid fa-clock"></i> Call history</h2>
+                </div>
+                <div>
+                    <button class="btn btn-active btn-success w-[140px] h-[40px] rounded-3xl"
+                        onclick="clearhistory()">Clear</button>
+                </div>
+            </div>
+            <div>
+                <ul id="Call-history" class="list-dis pl-5"></ul>
+            </div>
+            <div>
+                <h5></h5>
+            </div>
+        </div>
 
 
 

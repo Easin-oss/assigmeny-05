@@ -49,13 +49,18 @@ cheackover.forEach(service => {
  cardContainer.appendChild(card);
 
 function callService(serviceName,serviceNumber){
+
+    if(coins <20 ){
+        alert("not enough coin to make a call")
+        return;
+    }
      coins -= 20;
         updateCoinDisplay();
 
-        alert(`Calling ${serviceName} at ${serviceNumber}`);
+        alert(`Calling ${serviceName} at ${serviceNumber}`)
 
-        const historyList = document.getElementById('call-history');
-        const li = document.createElement('li');
-        li.textContent = `${serviceName} - ${serviceNumber}`;
-        historyList.appendChild(li);
+        const historyList = document.getElementById('call-history')
+        const li = document.createElement('li')
+        li.textContent = `${serviceName} - ${serviceNumber}`
+        historyList.appendChild(li)
 }
