@@ -25,7 +25,7 @@
         <div class="flex justify-center gap-5">
             <p class="w-[120px] h-[50px] bg-[#41ff6b1a] rounded-3xl text-center px-8 py-4"><span
                     id="heart-count">0</span>❤️</p>
-            <p class="w-[120px] h-[50px] bg-[#41ff6b1a] rounded-3xl text-center px-8 py-4"><span>100</span>🪙</p>
+            <p class="w-[120px] h-[50px] bg-[#41ff6b1a] rounded-3xl text-center px-8 py-4"><span id="coin-count">100</span>🪙</p>
             <p class="w-[120px] h-[50px] bg-[#00a63e] rounded-3xl text-center  px-8 py-4"> <span>0</span>Copy</p>
         </div>
     </div>
@@ -212,12 +212,15 @@
                         <h2><i class="fa-solid fa-clock"></i> Call history</h2>
                     </div>
                     <div>
-                        <button class="btn btn-active btn-success w-[140px] h-[40px] rounded-3xl"
-                            id="clear-button">Clear</button>
+                        <button class="btn btn-active btn-success w-[140px] h-[40px] rounded-3xl" onclick="clearhistory()"
+                        >Clear</button>
                     </div>
                 </div>
                 <div>
-
+                    <ul id="Call-history" class="list-dis pl-5"></ul>
+                </div>
+                <div>
+                    <h5></h5>
                 </div>
             </div>
         </div>
